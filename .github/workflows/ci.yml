@@ -6,7 +6,7 @@ on:
 jobs:
   job1:
     runs-on:
-      - codebuild-<project name>-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-test-github-action-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - name: Test Command
         run: ls
